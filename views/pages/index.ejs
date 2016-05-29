@@ -7,17 +7,13 @@
 <body>
   <div class="main_container">
     <h1>Theo and Rachel are getting married</h1>
-    <h2>Request an invitation</h2>
-    <form action="submitInviteRequest">
-      <label>
-        Name(s)
-      </label>
-      <input class="text_input" type="text" />
-      <label>
-        Email
-      </label>
-      <input class="text_input" type="text" />
-    </form>
+    <h2>October 15th, 2016 ~ Mount Hood, Oregon</h2>
+    <% if (!inviteRequestSubmitted) { %>
+      <% include ../partials/invite_request_form.ejs %>
+    <% } %>
+    <% if (inviteRequestSubmitted) { %>
+      <% include ../partials/invite_request_response.ejs %>
+    <% } %>
   </div>
 </body>
 </html>

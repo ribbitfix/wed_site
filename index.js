@@ -11,7 +11,22 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-  response.render('pages/index');
+    response.render('pages/index', {
+        inviteRequestSubmitted: false
+    });
+});
+
+app.get('/submit_invite_request', function(request, response) {
+    // TODO:
+    // - submit data to airtable
+    response.render('pages/index', {
+        inviteRequestSubmitted: true
+    });
+
+});
+
+app.get('/event_info', function(request, response) {
+    response.render('pages/event_info');
 });
 
 app.get('/cool', function(request, response) {
