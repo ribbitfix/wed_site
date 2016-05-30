@@ -1,6 +1,13 @@
 var express = require('express');
 var app = express();
 var cool = require('cool-ascii-faces');
+var Airtable = require('airtable');
+var bodyParser = require('body-parser');
+
+var base = new Airtable({apiKey: 'keyFlAuEUPyJtxN4X'}).base('appTEyGfaH1nbpfH6');
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -16,9 +23,16 @@ app.get('/', function(request, response) {
     });
 });
 
-app.get('/submit_invite_request', function(request, response) {
-    // TODO:
-    // - submit data to airtable
+app.post ('/submit_invite_request', function(request, response) {
+    base('InvitationRequested').create({
+        Names: request.body.names,
+        Email: request.body.email
+    }, function(err, record) {
+        if (err) {
+            console.log('error: ', err);
+            return;
+        }
+    });
     response.render('pages/index', {
         inviteRequestSubmitted: true
     });
