@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
+app.use('/scripts', express.static(__dirname + '/node_modules/bootstrap-material-design/dist'));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
@@ -40,7 +41,6 @@ app.post ('/submit_invite_request', function(request, response) {
                 inviteRequestSubmitted: true,
                 submissionFailed: false
             });
-
         }
     });
 
