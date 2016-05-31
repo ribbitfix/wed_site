@@ -19,7 +19,8 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
     response.render('pages/index', {
-        inviteRequestSubmitted: false
+        inviteRequestSubmitted: false,
+        submissionFailed: false
     });
 });
 
@@ -30,11 +31,17 @@ app.post ('/submit_invite_request', function(request, response) {
     }, function(err, record) {
         if (err) {
             console.log('error: ', err);
-            return;
+            response.render('pages/index', {
+                inviteRequestSubmitted: false,
+                submissionFailed: true
+            });
+        } else {
+            response.render('pages/index', {
+                inviteRequestSubmitted: true,
+                submissionFailed: false
+            });
+
         }
-    });
-    response.render('pages/index', {
-        inviteRequestSubmitted: true
     });
 
 });
