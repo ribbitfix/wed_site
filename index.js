@@ -1,10 +1,8 @@
 var express = require('express');
 var app = express();
 var cool = require('cool-ascii-faces');
-var Airtable = require('airtable');
 var bodyParser = require('body-parser');
-
-var base = new Airtable({apiKey: 'keyFlAuEUPyJtxN4X'}).base('appTEyGfaH1nbpfH6');
+var base = require('airtable').base('appTEyGfaH1nbpfH6');
 
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
