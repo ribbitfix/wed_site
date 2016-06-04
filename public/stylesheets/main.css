@@ -18,11 +18,12 @@ body {
 .well {
     color: black;
 }
-
+.well.invite_request {
+    width: 365px;
+}
 .well h3 {
     margin-top: 10px;
 }
-
 .headline: {
     /*flex: 1;*/
 }
