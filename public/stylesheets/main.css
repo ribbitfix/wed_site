@@ -29,3 +29,6 @@
 .invite_request_container {
     flex: 2 1 60%;
 }
+.text_input {
+    padding-left: 5px;
+}
