@@ -1,36 +1,38 @@
-<div class="well invite_request">
-    <h3>Request an invitation</h3>
-    <% if (submissionFailed) { %>
-        <div class="alert alert-danger">
-            <strong>
-                Uh-oh, something went wrong!
-            </strong>
-            <p>
-                Please try again, and if it still doesn't work, give Rachel a call.
-            </p>
-        </div>
-    <% } %>
-    <form action="submit_invite_request" method="post">
-        <div class="form-group">
-            <label>
-                Name(s)
-            </label>
-            <input class="text_input form-control"
-                   type="text"
-                   name="names"
-                   required />
-        </div>
-        <div class="form-group">
-            <label>
-                Email
-            </label>
-            <input class="text_input form-control"
-                   type="email"
-                   name="email"
-                   required />
-        </div>
-        <input type="submit"
-               class="btn btn-primary btn-raised"
-               value="Send" />
-    </form>
+<div class="invite_request_container">
+    <div class="well invite_request">
+        <h3>Request an invitation</h3>
+        <% if (submissionFailed) { %>
+            <div class="alert alert-danger">
+                <strong>
+                    Uh-oh, something went wrong!
+                </strong>
+                <p>
+                    Please try again, and if it still doesn't work, give Rachel a call.
+                </p>
+            </div>
+        <% } %>
+        <form action="submit_invite_request" method="post">
+            <div class="form-group">
+                <label>
+                    Name(s)
+                </label>
+                <input class="text_input form-control"
+                       type="text"
+                       name="names"
+                       required />
+            </div>
+            <div class="form-group">
+                <label>
+                    Email
+                </label>
+                <input class="text_input form-control"
+                       type="email"
+                       name="email"
+                       required />
+            </div>
+            <input type="submit"
+                   class="btn btn-primary btn-raised"
+                   value="Send" />
+        </form>
+    </div>
 </div>

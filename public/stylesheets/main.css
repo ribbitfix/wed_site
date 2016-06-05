@@ -20,9 +20,12 @@
 .well h3 {
     margin-top: 10px;
 }
-.headline: {
-    /*flex: 1;*/
-}
 .submit_thanks {
-    /*flex: 2;*/
+    flex: 1 1 70%;
+}
+.headline_container {
+    flex: 1 1 30%;
+}
+.invite_request_container {
+    flex: 2 1 60%;
 }
