@@ -44,6 +44,10 @@ app.post('/submit_invite_request', function(request, response) {
 
 });
 
+app.get('/rsvp', function(request, response) {
+    response.render('pages/invitation', {});
+});
+
 app.get('/event_info', function(request, response) {
     response.render('pages/event_info');
 });
