@@ -23,7 +23,7 @@ app.get('/', function(request, response) {
     });
 });
 
-app.post ('/submit_invite_request', function(request, response) {
+app.post('/submit_invite_request', function(request, response) {
     base('InvitationRequested').create({
         Names: request.body.names,
         Email: request.body.email
