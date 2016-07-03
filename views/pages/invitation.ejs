@@ -3,6 +3,7 @@
 <head>
   <% include ../partials/header.ejs %>
   <script type="text/javascript" src="/sprinkles/invitation.js"></script>
+  <script type="text/javascript" src="/bootstrap/button.js"></script>
 </head>
 <body>
 <div class="form-group">
@@ -21,9 +22,16 @@
     </div>
 </div>
 <form id="regretsForm" class="hide">
+    <h1>Bummer!</h1>
     <div class="form-group">
-        <label>Bummer! Who are you, and what'll you be up to instead?</label>
-        <textarea class="form-control"></textarea>
+        <label>Who are you?</label>
+        <input type="text"
+               class="form-control"
+               name="Name">
+        <label>What'll you be up to instead?</label>
+        <textarea class="form-control"
+                  name="Message">
+        </textarea>
     </div>
 </form>
 
@@ -32,12 +40,12 @@
         <label>How many guests?</label>
         <input type="number"
                class="form-control"
-               name="numberOfGuests"
+               name="NumberOfGuests"
                id="numberOfGuests"
                min="1"
                max="8">
     </div>
-    <fieldset>
+    <fieldset class="form-group">
         <legend>Names</legend>
             <div class="form-group guest_name hide">
                 <label>Guest 1</label>
@@ -88,6 +96,33 @@
                        name="guest8">
             </div>
     </fieldset>
+    <% if (isDayGuest) { %>
+        <div class="form-group btn-group">
+            <label>
+                Interested in carpooling?
+                <input type="checkbox"
+                       class="form-control"
+                       name="Carpool">
+            </label>
+        </div>
+    <% } else { %>
+        Will you be staying with us at Cooper Spur?
+        <span>Hint: the correct answer is "yes"</span>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn">
+                Yes
+                <input type="radio"
+                       name="StayingAtCS">
+            </label>
+            <label class="btn">
+                No
+                <input type="radio"
+                       name="StayingAtCS">
+            </label>
+
+        </div>
+    <% } %>
+
 </form>
 </body>
 </html>

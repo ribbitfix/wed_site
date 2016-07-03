@@ -44,8 +44,16 @@ app.post('/submit_invite_request', function(request, response) {
 
 });
 
-app.get('/rsvp', function(request, response) {
-    response.render('pages/invitation', {});
+app.get('/rsvp_day', function(request, response) {
+    response.render('pages/invitation', {
+        isDayGuest: true
+    });
+});
+
+app.get('/rsvp_overnight', function(request, response) {
+    response.render('pages/invitation', {
+        isDayGuest: false
+    });
 });
 
 app.get('/event_info', function(request, response) {
