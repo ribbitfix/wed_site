@@ -1,3 +1,12 @@
+.form-group .btn.teal {
+    background-color: #008080;
+    color: white;
+}
+.form-group .btn.raspberry {
+    background-color: #E30B5D;
+    color: white;
+}
+
 .main_container {
     text-align: center;
     background-color: transparent;
@@ -38,4 +47,10 @@ invitation form
 ****************/
 .hide {
     display: none;
+}
+.invitation_page {
+    text-align: center;
+}
+.invitation_page label {
+    display: block;
 }
