@@ -9,6 +9,11 @@ $(document).ready(function() {
     });
     $('#numberOfGuests').keyup(function() {
         var newVal = $('#numberOfGuests').val();
+        if (newVal) {
+            $('fieldset').removeClass('hide');
+        } else {
+            $('fieldset').addClass('hide');
+        }
         var guestInputs = $('.guest_name');
         for (var i = newVal - 1; i >= 0; i--) {
             $(guestInputs[i]).removeClass('hide');
