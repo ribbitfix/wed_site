@@ -71,6 +71,23 @@ app.post('/submit_yes_rsvp', function(request, response) {
     });
 });
 
+app.post('/submit_no_rsvp', function(request, response) {
+    base('RegretsRSVP').create({
+        Name: request.body.Name,
+        Message: request.body.Message
+    }, function(err, record) {
+        if (err) {
+            console.log('error: ', err);
+            // TODO: error response
+        } else {
+            response.render('pages/index', {
+                yesRSVPsubmitted: false,
+                noRSVPsubmitted: true
+            });
+        }
+    });
+});
+
 app.get('/rsvp_day', function(request, response) {
     response.render('pages/invitation', {
         isDayGuest: true

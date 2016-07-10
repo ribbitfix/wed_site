@@ -21,7 +21,10 @@
         </button>
     </div>
 </div>
-<form id="regretsForm" class="hide">
+<form id="regretsForm"
+      class="hide"
+      action="submit_no_rsvp"
+      method="post">
     <h1>Bummer!</h1>
     <div class="form-group">
         <label>Who are you?</label>
@@ -33,6 +36,12 @@
         <label>What'll you be up to instead?</label>
         <textarea name="Message" rows="8">
         </textarea>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-raised blue"
+                type="submit">
+            RSVP
+        </button>
     </div>
 </form>
 
