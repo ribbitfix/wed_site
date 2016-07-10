@@ -41,7 +41,28 @@ app.post('/submit_invite_request', function(request, response) {
             });
         }
     });
+});
 
+app.post('/submit_yes_rsvp', function(request, response) {
+    base('YesRSVP').create({
+        NumberOfGuests: parseInt(request.body.NumberOfGuests, 10),
+        Guest1: request.body.guest1,
+        Guest2: request.body.guest2,
+        Guest3: request.body.guest3,
+        Guest4: request.body.guest4,
+        Guest5: request.body.guest5,
+        Guest6: request.body.guest6,
+        Guest7: request.body.guest7,
+        Guest8: request.body.guest8,
+        StayingAtCS: request.body.StayingAtCS,
+        LodgingPreferences: request.body.LodgingPreferences,
+        DietInfo: request.body.DietInfo,
+        SongRequests: request.body.SongRequests
+    }, function(err, record) {
+        if (err) {
+            console.log('error: ', err);
+        }
+    });
 });
 
 app.get('/rsvp_day', function(request, response) {

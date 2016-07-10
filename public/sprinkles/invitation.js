@@ -25,7 +25,7 @@ $(document).ready(function() {
     $("input[type='radio'][name='StayingAtCS']").change(function() {
         var selected = $("input[type='radio'][name='StayingAtCS']:checked");
         var currentVal = selected.val();
-        if (currentVal === 'StayingAtCS_Yes') {
+        if (currentVal === 'Yes') {
             $('#lodgingPrefs').removeClass('hide');
         } else {
             $('#lodgingPrefs').addClass('hide');
