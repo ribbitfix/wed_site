@@ -95,3 +95,6 @@ invitation form
     background-color: #008BA0;
     color: white;
 }
+.form-group textarea {
+    width: 400px;
+}

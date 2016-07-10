@@ -28,9 +28,10 @@
         <input type="text"
                class="form-control"
                name="Name">
+    </div>
+    <div class="form-group">
         <label>What'll you be up to instead?</label>
-        <textarea class="form-control"
-                  name="Message">
+        <textarea name="Message" rows="8">
         </textarea>
     </div>
 </form>
@@ -47,7 +48,7 @@
                max="8">
     </div>
     <div class="panel panel-default hide" id="guestNames">
-        <div class="panel-heading">Names</div>
+        <div class="panel-heading">Name(s)</div>
         <div class="panel-body">
             <div class="form-group guest_name hide">
                 <label>Guest 1</label>
@@ -135,22 +136,22 @@
                 Any lodging preferences?
             </label>
             <p>
-                (e.g. "We'd like to share a cabin with...", "I love bunk beds!")
+                (preferred cabinmates, style of room?)
             </p>
-            <textarea class="form-control"></textarea>
+            <textarea name="LodgingPreferences" rows="3"></textarea>
         </div>
     <% } %>
     <div class="form-group">
         <label>
             Any dietary restrictions?
         </label>
-        <textarea class="form-control"></textarea>
+        <textarea name="DietInfo" rows="3"></textarea>
     </div>
     <div class="form-group">
         <label>
             Any song requests for the dance party?
         </label>
-        <textarea class="form-control"></textarea>
+        <textarea name="SongRequests" rows="3"></textarea>
     </div>
 
 </form>
