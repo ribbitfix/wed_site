@@ -98,3 +98,13 @@ invitation form
 .form-group textarea {
     width: 400px;
 }
+.form-group .checkbox label {
+    color: black;
+}
+.checkbox .checkbox-material .check {
+    margin-bottom: -4px;
+}
+.checkbox input[type=checkbox]:checked + .checkbox-material .check {
+    color: #008BA0;
+    border-color: #008BA0;
+}

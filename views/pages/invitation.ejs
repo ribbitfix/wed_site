@@ -102,13 +102,17 @@
     </div>
 
     <% if (isDayGuest) { %>
-        <div class="form-group btn-group">
-            <label>
-                Interested in carpooling?
-                <input type="checkbox"
-                       class="form-control"
-                       name="Carpool">
-            </label>
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"
+                           name="Carpool">
+                    <span class="checkbox-material">
+                        <span class="check"></span>
+                        Interested in carpooling?
+                    </span>
+                </label>
+            </div>
         </div>
     <% } else { %>
         <div class="form-group">
