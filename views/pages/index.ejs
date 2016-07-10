@@ -10,11 +10,15 @@
       <h2>October 15th, 2016</h2>
       <h3>Mount Hood, Oregon</h3>
     </div>
-    <% if (!inviteRequestSubmitted) { %>
-      <% include ../partials/invite_request_form.ejs %>
+    <% if (yesRSVPsubmitted) { %>
+      <div class="well">
+        Thanks for your RSVP. We're so glad you're coming!
+      </div>
     <% } %>
-    <% if (inviteRequestSubmitted) { %>
-      <% include ../partials/invite_request_response.ejs %>
+    <% if (noRSVPsubmitted) { %>
+      <div class="well">
+        Sorry you won't be joining us, but thank you for letting us know!
+      </div>
     <% } %>
   </div>
 </body>

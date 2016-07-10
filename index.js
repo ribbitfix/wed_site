@@ -18,8 +18,8 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
     response.render('pages/index', {
-        inviteRequestSubmitted: false,
-        submissionFailed: false
+        yesRSVPsubmitted: false,
+        noRSVPsubmitted: false
     });
 });
 
@@ -61,6 +61,12 @@ app.post('/submit_yes_rsvp', function(request, response) {
     }, function(err, record) {
         if (err) {
             console.log('error: ', err);
+            // TODO: error response
+        } else {
+            response.render('pages/index', {
+                yesRSVPsubmitted: true,
+                noRSVPsubmitted: false
+            });
         }
     });
 });
