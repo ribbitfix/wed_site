@@ -1,32 +1,6 @@
-.form-group .btn.blue,
-.form-group .btn.blue:focus {
-    background-color: #008BA0;
-    color: white;
-}
-.form-group .btn.red,
-.form-group .btn.red:focus {
-    background-color: #800020;
-    color: white;
-}
-.form-group .btn.blue.active,
-.form-group .btn.blue.active:hover {
-    background-color: #008BA0;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
-}
-.form-group .btn.red.active,
-.form-group .btn.red.active:hover {
-    background-color: #800020;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
-}
-.form-group .btn.blue:hover {
-    background-color: rgba(0, 139, 160, 0.8);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
-}
-.form-group .btn.red:hover {
-    background-color: rgba(128, 0, 32, 0.8);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
-}
-
+/**************
+  splash page
+**************/
 .main_container {
     text-align: center;
     background-color: transparent;
@@ -73,4 +47,51 @@ invitation form
 }
 .invitation_page label {
     display: block;
+}
+.form-group .btn.blue,
+.form-group .btn.blue:focus {
+    background-color: #008BA0;
+    color: white;
+}
+.form-group .btn.red,
+.form-group .btn.red:focus {
+    background-color: #800020;
+    color: white;
+}
+.form-group .btn.blue.active,
+.form-group .btn.blue.active:hover {
+    background-color: #008BA0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.form-group .btn.red.active,
+.form-group .btn.red.active:hover {
+    background-color: #800020;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.form-group .btn.blue:hover {
+    background-color: rgba(0, 139, 160, 0.8);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.form-group .btn.red:hover {
+    background-color: rgba(128, 0, 32, 0.8);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.form-group label {
+    color: black;
+}
+.form-group input {
+    margin: auto;
+    text-align: center;
+    width: 300px;
+}
+.form-group input[type=number] {
+    width: 100px;
+}
+#guestNames {
+    width: 400px;
+    margin: auto;
+}
+.panel.panel-default .panel-heading {
+    background-color: #008BA0;
+    color: white;
 }

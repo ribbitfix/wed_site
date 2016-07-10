@@ -7,12 +7,12 @@ $(document).ready(function() {
         $('#regretsForm').addClass('hide');
         $('#yesForm').removeClass('hide');
     });
-    $('#numberOfGuests').keyup(function() {
+    $('#numberOfGuests').bind('keyup mouseup mousewheel', function() {
         var newVal = $('#numberOfGuests').val();
         if (newVal) {
-            $('fieldset').removeClass('hide');
+            $('#guestNames').removeClass('hide');
         } else {
-            $('fieldset').addClass('hide');
+            $('#guestNames').addClass('hide');
         }
         var guestInputs = $('.guest_name');
         for (var i = newVal - 1; i >= 0; i--) {

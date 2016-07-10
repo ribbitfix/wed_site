@@ -46,8 +46,9 @@
                min="1"
                max="8">
     </div>
-    <fieldset class="form-group hide">
-        <legend>Names</legend>
+    <div class="panel panel-default hide" id="guestNames">
+        <div class="panel-heading">Names</div>
+        <div class="panel-body">
             <div class="form-group guest_name hide">
                 <label>Guest 1</label>
                 <input class="form-control"
@@ -96,7 +97,9 @@
                        type="text"
                        name="guest8">
             </div>
-    </fieldset>
+        </div>
+    </div>
+
     <% if (isDayGuest) { %>
         <div class="form-group btn-group">
             <label>
