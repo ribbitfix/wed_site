@@ -1,10 +1,30 @@
-.form-group .btn.teal {
-    background-color: #008080;
+.form-group .btn.blue,
+.form-group .btn.blue:focus {
+    background-color: #008BA0;
     color: white;
 }
-.form-group .btn.raspberry {
-    background-color: #E30B5D;
+.form-group .btn.red,
+.form-group .btn.red:focus {
+    background-color: #800020;
     color: white;
+}
+.form-group .btn.blue.active,
+.form-group .btn.blue.active:hover {
+    background-color: #008BA0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.form-group .btn.red.active,
+.form-group .btn.red.active:hover {
+    background-color: #800020;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.form-group .btn.blue:hover {
+    background-color: rgba(0, 139, 160, 0.8);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
+}
+.form-group .btn.red:hover {
+    background-color: rgba(128, 0, 32, 0.8);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
 }
 
 .main_container {
