@@ -22,4 +22,13 @@ $(document).ready(function() {
             $(guestInputs[i]).addClass('hide');
         }
     });
+    $("input[type='radio'][name='StayingAtCS']").change(function() {
+        var selected = $("input[type='radio'][name='StayingAtCS']:checked");
+        var currentVal = selected.val();
+        if (currentVal === 'StayingAtCS_Yes') {
+            $('#lodgingPrefs').removeClass('hide');
+        } else {
+            $('#lodgingPrefs').addClass('hide');
+        }
+    });
 });

@@ -114,27 +114,29 @@
             <label>
                 Will you be staying with us at Cooper Spur?
             </label>
-            <span>(Hint: the correct answer is "yes")</span>
+            <p>(Hint: the correct answer is "yes")</p>
             <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-raised blue">
                     Yes
                     <input type="radio"
-                           name="StayingAtCS">
+                           name="StayingAtCS"
+                           value="StayingAtCS_Yes">
                 </label>
                 <label class="btn btn-raised red">
                     No
                     <input type="radio"
-                           name="StayingAtCS">
+                           name="StayingAtCS"
+                           value="StayingAtCS_No">
                 </label>
             </div>
         </div>
-        <div class="form-group">
+        <div class="form-group hide" id="lodgingPrefs">
             <label>
                 Any lodging preferences?
             </label>
-            <span>
+            <p>
                 (e.g. "We'd like to share a cabin with...", "I love bunk beds!")
-            </span>
+            </p>
             <textarea class="form-control"></textarea>
         </div>
     <% } %>
