@@ -112,3 +112,6 @@ invitation form
     background-color: #800020;
     color: white;
 }
+input[type=radio] {
+    width: 15px;
+}
