@@ -112,6 +112,10 @@ app.get('/location', function(request, response) {
     response.render('pages/location');
 });
 
+app.get('/gifts', function(request, response) {
+    response.render('pages/gifts');
+});
+
 app.get('/cool', function(request, response) {
     response.send(cool());
 });
