@@ -108,3 +108,7 @@ invitation form
     color: #008BA0;
     border-color: #008BA0;
 }
+.alert.alert-danger {
+    background-color: #800020;
+    color: white;
+}

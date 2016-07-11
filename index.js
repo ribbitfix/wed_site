@@ -61,7 +61,10 @@ app.post('/submit_yes_rsvp', function(request, response) {
     }, function(err, record) {
         if (err) {
             console.log('error: ', err);
-            // TODO: error response
+            response.render('pages/invitation', {
+                isDayGuest: request.body.isDayGuest,
+                submissionFailed: true
+            });
         } else {
             response.render('pages/index', {
                 yesRSVPsubmitted: true,
@@ -78,7 +81,10 @@ app.post('/submit_no_rsvp', function(request, response) {
     }, function(err, record) {
         if (err) {
             console.log('error: ', err);
-            // TODO: error response
+            response.render('pages/invitation', {
+                isDayGuest: request.body.isDayGuest,
+                submissionFailed: true
+            });
         } else {
             response.render('pages/index', {
                 yesRSVPsubmitted: false,
@@ -90,13 +96,15 @@ app.post('/submit_no_rsvp', function(request, response) {
 
 app.get('/rsvp_day', function(request, response) {
     response.render('pages/invitation', {
-        isDayGuest: true
+        isDayGuest: true,
+        submissionFailed: false
     });
 });
 
 app.get('/rsvp_overnight', function(request, response) {
     response.render('pages/invitation', {
-        isDayGuest: false
+        isDayGuest: false,
+        submissionFailed: false
     });
 });
 
