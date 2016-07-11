@@ -108,8 +108,8 @@ app.get('/rsvp_overnight', function(request, response) {
     });
 });
 
-app.get('/event_info', function(request, response) {
-    response.render('pages/event_info');
+app.get('/location', function(request, response) {
+    response.render('pages/location');
 });
 
 app.get('/cool', function(request, response) {
