@@ -7,6 +7,9 @@ p {
 a, a:hover, a:focus {
     color: #008BA0;
 }
+.scooch_down {
+    margin-top: 20px;
+}
 /*************
   nav bar
 *************/
