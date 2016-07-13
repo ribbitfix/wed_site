@@ -1,3 +1,31 @@
+/*************
+  general
+**************/
+p {
+    font-size: 16px;
+}
+a, a:hover, a:focus {
+    color: #008BA0;
+}
+/*************
+  nav bar
+*************/
+.navbar.navbar-default {
+    background-color: #008BA0;
+    color: white;
+}
+
+/*************
+  gifts page
+*************/
+.important {
+    font-size: 20px;
+}
+.bark_info {
+    padding: 10px;
+    text-align: center;
+}
+
 /**************
   splash page
 **************/
@@ -48,31 +76,31 @@ invitation form
 .invitation_page label {
     display: block;
 }
-.form-group .btn.blue,
-.form-group .btn.blue:focus {
+.btn.btn-raised.blue,
+.btn.btn-raised.blue:focus {
     background-color: #008BA0;
     color: white;
 }
-.form-group .btn.red,
-.form-group .btn.red:focus {
+.btn.btn-raised.red,
+.btn.btn-raised.red:focus {
     background-color: #800020;
     color: white;
 }
-.form-group .btn.blue.active,
-.form-group .btn.blue.active:hover {
+.btn.btn-raised.blue.active,
+.btn.btn-raised.blue.active:hover {
     background-color: #008BA0;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
 }
-.form-group .btn.red.active,
-.form-group .btn.red.active:hover {
+.btn.btn-raised.red.active,
+.btn.btn-raised.red.active:hover {
     background-color: #800020;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
 }
-.form-group .btn.blue:hover {
+.btn.btn-raised.blue:hover {
     background-color: rgba(0, 139, 160, 0.8);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
 }
-.form-group .btn.red:hover {
+.btn.btn-raised.red:hover {
     background-color: rgba(128, 0, 32, 0.8);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
 }
