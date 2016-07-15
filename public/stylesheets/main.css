@@ -10,6 +10,10 @@ a, a:hover, a:focus {
 .scooch_down {
     margin-top: 20px;
 }
+.important {
+    font-size: 20px;
+}
+
 /*************
   nav bar
 *************/
@@ -18,12 +22,16 @@ a, a:hover, a:focus {
     color: white;
 }
 
+/**************
+  location page
+**************/
+dd > dl > dt, dd > dl > dd {
+    margin-left: 40px;
+}
+
 /*************
   gifts page
 *************/
-.important {
-    font-size: 20px;
-}
 .bark_info {
     padding: 10px;
     text-align: center;
