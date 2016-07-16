@@ -27,6 +27,10 @@ a, a:hover, a:focus {
     font-weight: bolder;
     border-left: 15px solid #800020;
 }
+.info {
+    background-color: rgba(128,0,32,0.2);
+    padding: 15px;
+}
 .row {
     margin-bottom: 20px;
 }

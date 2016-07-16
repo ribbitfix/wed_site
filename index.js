@@ -116,8 +116,8 @@ app.get('/gifts', function(request, response) {
     response.render('pages/gifts');
 });
 
-app.get('/cool', function(request, response) {
-    response.send(cool());
+app.get('/schedule', function(request, response) {
+    response.render('pages/schedule');
 });
 
 app.listen(app.get('port'), function() {
