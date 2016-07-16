@@ -15,6 +15,9 @@ a, a:hover, a:focus {
 .scooch_down {
     margin-top: 20px;
 }
+.photo {
+    width: 100%;
+}
 .photo_credit {
     text-align: center;
     font-size: 14px;
@@ -23,6 +26,9 @@ a, a:hover, a:focus {
     padding-left: 15px;
     font-weight: bolder;
     border-left: 15px solid #800020;
+}
+.row {
+    margin-bottom: 20px;
 }
 
 /*************
