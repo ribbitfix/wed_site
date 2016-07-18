@@ -19,7 +19,11 @@ app.set('view engine', 'ejs');
 app.get('/', function(request, response) {
     response.render('pages/index', {
         yesRSVPsubmitted: false,
-        noRSVPsubmitted: false
+        noRSVPsubmitted: false,
+        home: "active",
+        location: "",
+        schedule: "",
+        gifts: ""
     });
 });
 
@@ -32,12 +36,20 @@ app.post('/submit_invite_request', function(request, response) {
             console.log('error: ', err);
             response.render('pages/index', {
                 inviteRequestSubmitted: false,
-                submissionFailed: true
+                submissionFailed: true,
+                home: "active",
+                location: "",
+                schedule: "",
+                gifts: ""
             });
         } else {
             response.render('pages/index', {
                 inviteRequestSubmitted: true,
-                submissionFailed: false
+                submissionFailed: false,
+                home: "active",
+                location: "",
+                schedule: "",
+                gifts: ""
             });
         }
     });
@@ -68,7 +80,11 @@ app.post('/submit_yes_rsvp', function(request, response) {
         } else {
             response.render('pages/index', {
                 yesRSVPsubmitted: true,
-                noRSVPsubmitted: false
+                noRSVPsubmitted: false,
+                home: "active",
+                location: "",
+                schedule: "",
+                gifts: ""
             });
         }
     });
@@ -88,7 +104,11 @@ app.post('/submit_no_rsvp', function(request, response) {
         } else {
             response.render('pages/index', {
                 yesRSVPsubmitted: false,
-                noRSVPsubmitted: true
+                noRSVPsubmitted: true,
+                home: "active",
+                location: "",
+                schedule: "",
+                gifts: ""
             });
         }
     });
@@ -109,15 +129,30 @@ app.get('/rsvp_overnight', function(request, response) {
 });
 
 app.get('/location', function(request, response) {
-    response.render('pages/location');
+    response.render('pages/location', {
+        home: "",
+        location: "active",
+        schedule: "",
+        gifts: ""
+    });
 });
 
 app.get('/gifts', function(request, response) {
-    response.render('pages/gifts');
+    response.render('pages/gifts', {
+        home: "",
+        location: "",
+        schedule: "",
+        gifts: "active"
+    });
 });
 
 app.get('/schedule', function(request, response) {
-    response.render('pages/schedule');
+    response.render('pages/schedule', {
+        home: "",
+        location: "",
+        schedule: "active",
+        gifts: ""
+    });
 });
 
 app.listen(app.get('port'), function() {

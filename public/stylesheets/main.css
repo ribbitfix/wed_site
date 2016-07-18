@@ -45,6 +45,12 @@ a, a:hover, a:focus {
 .home .navbar {
     margin-bottom: 0;
 }
+li.active {
+    border-bottom: 7px solid #800020;
+}
+.navbar .navbar-nav li a {
+    padding-bottom: 8px;
+}
 
 /**************
   location page

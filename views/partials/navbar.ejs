@@ -1,18 +1,20 @@
-<div class="navbar navbar-default">
-    <div class="container-fluid">
-        <ul class="nav navbar-nav">
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/location">Location</a>
-            </li>
-            <li>
-                <a href="/schedule">Schedule</a>
-            </li>
-            <li>
-                <a href="/gifts">Gifts</a>
-            </li>
-        </ul>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
-</div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="<%= home %>"><a href="/">Home</a></li>
+        <li class="<%= location %>"><a href="/location">Location</a></li>
+        <li class="<%= schedule %>"><a href="/schedule">Schedule</a></li>
+        <li class="<%= gifts %>"><a href="/gifts">Gifts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
