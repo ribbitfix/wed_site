@@ -110,6 +110,9 @@ invitation form
 .invitation_page {
     text-align: center;
 }
+.invitation_page h1 {
+    margin-top: 10px;
+}
 .invitation_page label {
     display: block;
 }
@@ -141,8 +144,12 @@ invitation form
     background-color: rgba(128, 0, 32, 0.8);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
 }
-.form-group label {
+.form-group label, .form-group .checkbox label {
     color: black;
+    font-size: 20px;
+}
+.invitation_page .btn {
+    font-size: 16px;
 }
 .form-group input {
     margin: auto;
@@ -150,11 +157,11 @@ invitation form
     width: 300px;
 }
 .form-group input[type=number] {
-    width: 100px;
+    width: 60px;
 }
 #guestNames {
     width: 400px;
-    margin: auto;
+    margin: 20px auto;
 }
 .panel.panel-default .panel-heading {
     background-color: #008BA0;
