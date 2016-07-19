@@ -79,26 +79,12 @@ dd > dl > dt, dd > dl > dd {
     background-size: cover;
     height: 100vh;
 }
-.well {
-    color: black;
-}
-.well.invite_request {
-    width: 365px;
-}
-.well h3 {
-    margin-top: 10px;
-}
-.submit_thanks {
-    flex: 1 1 70%;
-}
-.headline_container {
-    flex: 1 1 30%;
-}
-.invite_request_container {
-    flex: 2 1 60%;
-}
-.text_input {
-    padding-left: 5px;
+.home .container-fluid .well {
+    width: 50%;
+    margin: 20px auto;
+    border: 7px solid #008BA0;
+    background-color: #800020;
+    color: white;
 }
 
 /****************

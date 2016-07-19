@@ -7,21 +7,17 @@
   <% include ../partials/navbar.ejs %>
 
   <div class="main_container container-fluid">
-    <div class="headline_container">
-      <h1>Theo and Rachel are getting married</h1>
-      <h2>October 15th, 2016</h2>
-      <h3>Mount Hood, Oregon</h3>
-    </div>
-    <% if (yesRSVPsubmitted) { %>
-      <div class="well">
+    <h1>Theo and Rachel are getting married</h1>
+    <h2>October 15th, 2016</h2>
+    <h3>Mount Hood, Oregon</h3>
+    <div class="well">
+      <% if (yesRSVPsubmitted) { %>
         Thanks for your RSVP. We're so glad you're coming!
-      </div>
-    <% } %>
-    <% if (noRSVPsubmitted) { %>
-      <div class="well">
-        Sorry you won't be joining us, but thank you for letting us know!
-      </div>
-    <% } %>
+      <% } %>
+      <% if (noRSVPsubmitted) { %>
+          Sorry you won't be joining us, but thank you for letting us know!
+      <% } %>
+    </div>
   </div>
 </body>
 </html>
