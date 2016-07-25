@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    $('#yesForm').on('keyup keypress', function(event) {
+        if (event.which === 13) {
+            event.preventDefault();
+        }
+    });
     $('#comingNo').click(function() {
         $('#yesForm').addClass('hide');
         $('#regretsForm').removeClass('hide');
