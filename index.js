@@ -56,6 +56,7 @@ app.post('/submit_invite_request', function(request, response) {
 });
 
 app.post('/submit_yes_rsvp', function(request, response) {
+    var carpool = request.body.Carpool === 'on' ? true : false;
     base('YesRSVP').create({
         NumberOfGuests: parseInt(request.body.NumberOfGuests, 10),
         Guest1: request.body.guest1,
@@ -67,6 +68,8 @@ app.post('/submit_yes_rsvp', function(request, response) {
         Guest7: request.body.guest7,
         Guest8: request.body.guest8,
         StayingAtCS: request.body.StayingAtCS,
+        InterestedInLodging: request.body.InterestedInLodging,
+        Carpool: carpool,
         LodgingPreferences: request.body.LodgingPreferences,
         DietInfo: request.body.DietInfo,
         SongRequests: request.body.SongRequests
