@@ -15,6 +15,9 @@ a, a:hover, a:focus {
 .scooch_down {
     margin-top: 20px;
 }
+.scooch_down_further {
+    margin-top: 40px;
+}
 .photo {
     width: 100%;
 }
