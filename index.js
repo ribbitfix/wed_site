@@ -27,6 +27,10 @@ app.get('/', function(request, response) {
     });
 });
 
+app.get('/diet', function(request, response) {
+    response.render('pages/diet', {});
+});
+
 // app.post('/submit_invite_request', function(request, response) {
 //     base('InvitationRequested').create({
 //         Names: request.body.names,

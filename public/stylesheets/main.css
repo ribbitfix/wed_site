@@ -176,3 +176,30 @@ invitation form
 input[type=radio] {
     width: 15px;
 }
+
+/***********
+ diet page
+***********/
+
+.table_container {
+    margin: 50px;
+    max-width: 100%;
+}
+
+.table_container table {
+    table-layout: fixed;
+}
+
+@media (max-width: 500px) {
+    .table_container table {
+        font-size: 45px;
+    }
+}
+
+.naughty_foods {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.nice_foods {
+    background-color: rgba(0, 128, 0, 0.4);
+}
